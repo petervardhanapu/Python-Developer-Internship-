@@ -1,0 +1,13 @@
+def decimal_to_hexadecimal(n):
+    if n == 0:
+        return "0"
+    hex_chars = "0123456789ABCDEF"
+    hex_number = ""
+    while n > 0:
+        remainder = n % 16
+        hex_number = hex_chars[remainder] + hex_number
+        n = n // 16
+    return hex_number
+
+N = 255
+print(f"The hexadecimal representation of {N} is {decimal_to_hexadecimal(N)}")
