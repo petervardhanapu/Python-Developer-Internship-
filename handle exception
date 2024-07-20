@@ -1,0 +1,23 @@
+def divide_fixed_number():
+    fixed_number = 10
+
+    try:
+        user_input = float(input("Please enter a number to divide 10 by: "))
+        result = fixed_number / user_input
+        
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+        
+    except ValueError:
+        print("Error: Invalid input. Please enter a numeric value.")
+        
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        
+    else:
+        print(f"The result of dividing {fixed_number} by {user_input} is {result}")
+        
+    finally:
+        print("Execution of the try-except block is complete.")
+
+divide_fixed_number()
