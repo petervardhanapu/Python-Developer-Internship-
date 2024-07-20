@@ -1,0 +1,13 @@
+class Person:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def displayDetails(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+
+if __name__ == "__main__":
+    person = Person("Peter", 23)
+    person.displayDetails()
